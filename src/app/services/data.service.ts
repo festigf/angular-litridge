@@ -8,7 +8,12 @@ export class DataService {
   frmDep: FormGroup;
   constructor(private http: HttpClient, fb: FormBuilder) {
     this.frmDep = fb.group({
-      sku: ["ABC123"]
+      codeDepartment: [],
+      dateOpened: [],
+      description: [],
+      location: [],
+      name: [],
+      telephone: []
     });
   }
   getDepartments() {

@@ -15,9 +15,12 @@ export class AppComponent  {
     this.dataService.getDepartments().subscribe( (deps:Department[]) =>
       {
         this.dataService.deps=deps;
-        console.log(this.deps);
+        console.log(this.dataService.deps);
       }
     )
+  }
+  onSubmit(value: string): void {
+   console.log('you submitted value: ', value);
   }
 }
 
