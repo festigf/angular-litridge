@@ -21,8 +21,9 @@ export class DataService {
       "https://lit-ridge-34418.herokuapp.com/api/department"
     );
   }
-  
-  postDepartment(dep){
+
+  postDepartment(dep:Department){
+    return this.http.post("https://lit-ridge-34418.herokuapp.com/api/department/save",dep);
 
   }
 }

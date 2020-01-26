@@ -9,7 +9,7 @@ import { Department} from '../domain/department';
 })
 export class AppComponent  {
   name = 'Angular';
-  deps;
+
   constructor(private dataService:DataService){}
   onLoad(){
     this.dataService.getDepartments().subscribe( (deps:Department[]) =>
@@ -19,7 +19,7 @@ export class AppComponent  {
       }
     )
   }
-  onSubmit(value: string): void {
+  onSubmit(value: Department): void {
    console.log('you submitted value: ', value);
   }
 }
