@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient} from '@angular/common/http';
-import {Department} from '../domanin/department';
+import { Department} from '../domain/department';
 @Injectable()
 export class DataService {
 
