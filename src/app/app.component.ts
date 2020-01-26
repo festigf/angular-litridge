@@ -19,8 +19,11 @@ export class AppComponent  {
       }
     )
   }
-  onSubmit(value: Department): void {
-   console.log('you submitted value: ', value);
+  onSubmit(dep: Department): void {
+   console.log('you submitted value: ', dep);
+   this.dataService.postDepartment(dep).subscribe( result=>
+    console.log(result)
+   )
   }
 }
 
