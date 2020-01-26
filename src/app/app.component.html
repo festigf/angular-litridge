@@ -4,3 +4,8 @@
 </p>
 
 <button (click)="onLoad()">Departments</button>
+
+<div *ngFor="let dep of deps">
+  {{dep.codeDepartment}} - {{dep.description}} - {{dep.location}} - {{dep.name}}
+
+</div>
