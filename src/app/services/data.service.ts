@@ -3,7 +3,7 @@ import { HttpClient} from '@angular/common/http';
 import { Department} from '../domain/department';
 @Injectable()
 export class DataService {
-
+  deps:Department[]=[];
   constructor(private http:HttpClient) { }
 
   getDepartments(){
