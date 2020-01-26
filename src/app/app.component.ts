@@ -20,11 +20,12 @@ export class AppComponent  {
     )
   }
   onSubmit(dep: Department): void {
-   console.log('you submitted value: ', dep);
+   
    dep.dateOpened=new Date();
    dep.location="Qui";
    dep.name="nome di prova";
    dep.telephone="11100011";
+   console.log('you submitted value: ', dep);
    this.dataService.postDepartment(dep).subscribe( result=>
     console.log(result)
    )
