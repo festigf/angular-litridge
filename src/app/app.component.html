@@ -5,7 +5,7 @@
 
 <button (click)="onLoad()">Departments</button>
 
-<div *ngFor="let dep of deps">
+<div *ngFor="let dep of this.dataService.deps">
   {{dep.codeDepartment}} - {{dep.description}} - {{dep.location}} - {{dep.name}}
 
 </div>
